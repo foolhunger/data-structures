@@ -6,10 +6,11 @@
 class BT3Node
 {
 public:
+    typedef std::string nodeDataType;
     BT3Node(): pParent(NULL), plChild(NULL), prChild(NULL){}
-    ~BT3Node();
+    ~BT3Node(){};
 
-    std::string data;
+    nodeDataType data;
     BT3Node *pParent;
     BT3Node *plChild;
     BT3Node *prChild;
